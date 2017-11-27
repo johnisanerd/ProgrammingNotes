@@ -1,0 +1,54 @@
+LINUX
+
+
+    * sudo reboot
+    * sudo halt
+    * sudo chown -R pi:pi ~/Sam_Dev/
+    * rm -r (directgory name) (removes all from these directories, and the directory).
+    * dmesg  -  Gives you the boot up information that flies by your face when you’re starting linux.
+    * nmap: Scans your network and lists connected devices, port number, protocol, state (open or closed) operating system, MAC addresses, and other information
+    * lsusb: Lists USB hardware connected to your Raspberry Pi.
+    * dpkg –get-selections | grep XXX: Shows all of the installed packages that are related to XXX.
+    * dpkg –get-selections: Shows all of your installed packages.
+    * dpkg -s <package name>  :  Checks if a package is installed or not.
+    * df -Bm - Checks free space on the file system.
+    * netstat -lptn - Show open ports and what program is using them
+    * ps axg | grep no-ip - Show processes that are running
+    * top - nice display of what's using resources . . . like windows task manager.
+    * pusd and popd - pushd saves the current directory in memory so it can be returned to. popd returns to the path at the top of the directory stack.
+    *  uname -a - Determines your kernel version.
+
+    * cat /proc/cpuinfo - Tells us the CPU information on the board.
+
+Find any file:
+     find . -name testfile.txt
+
+
+Debian
+
+    * apt-get autoremove - Cleans up unused packages.
+    * apt-get clean - Cleans up unused packages.
+
+
+SystemD (Helpful extensive guide here)
+
+    * sudo systemctl stop sam_start.service
+
+
+    * sudo systemctl disable sam_start.service
+    * restart,
+    * reload,
+    * start,
+    * stop,
+    * disable
+
+sudo systemctl status <service_name>
+sudo systemd-analyze critical-chain - This will tell you the system services, and the order in which the system services have started.
+
+Bash
+Multiline comments 
+<<COMMENT1
+  your comment 1
+  comment 2
+  blah
+COMMENT1

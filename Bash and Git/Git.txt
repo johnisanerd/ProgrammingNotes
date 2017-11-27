@@ -1,0 +1,14 @@
+GIT
+
+sudo git fetch --all
+sudo git push
+sudo git reset -- hard origin/master
+sudo git pull origin
+sudo get checkout <branch> #Change the branch you're in
+sudo git fetch #  Download objects and refs from another repository
+
+Throw out local changes:
+          git reset --hard HEAD
+
+
+
