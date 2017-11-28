@@ -1,6 +1,6 @@
 # ProgrammingNotes
 My Programming Notes
 
-## Setting Up Jupyter
+## Running Jupyter
 Run Jupyter in Programming Notes:
 `jupyter notebook --notebook-dir=D:\Github\johnisanerd\ProgrammingNotes`
