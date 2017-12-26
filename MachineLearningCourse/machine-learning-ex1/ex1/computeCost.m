@@ -15,8 +15,6 @@ J = 0;
 
 prediction = 0.0;
 
-
-
 for j = 1:m,
   prediction = prediction + (theta(1,1) + theta(2,1)*X(j,2) - y(j))^2;
 end;
